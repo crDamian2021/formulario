@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mru y Mruv</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Movimiento rectilíneo uniforme (MRU)</h1>
+        <p>Imagina que eres un astronauta en la Estación Espacial Internacional.
+            Estás arreglando unos paneles solares averiados, cuando de pronto, 
+            al presionar, tu destornillador sale disparado de tus manos. Si no
+            lo atrapas a tiempo, el destornillador estará viajando por el
+            espacio en línea recta y a velocidad constante, a menos que algo se interponga en su camino. Esto sucede porque la herramienta 
+            se mueve con movimiento rectilíneo uniforme, o MRU.</p>
+    </div>
+
+
+    <div class="img-grid1">
+        <div class="img">
+        <img src="./img/1.JPG" alt="">
+        <img src="./img/1.JPG" alt="">
+        <img src="./img/1.JPG" alt="">
+        </div>
+
+    </div>
+
+    <div class="grid">
+        <div class="form1">
+            
+            <form action="" class="form2">
+                <h1>Calcular la velocidad</h1>
+                <br>
+                <input type="number" id="tiempo" placeholder="Ingrese el Distancia">
+                <br>
+                <br>
+                <input type="number" id="distacia" placeholder="Ingrese el Tiempo">
+                <br>
+                <br>
+                <button type="button"  onclick="captura();">Calcular</button>
+                <h1 id="result" >Calculando..</h1>
+
+            </form> 
+        </div>
+
+
+        <div class="form1">
+            <form action="" class="form2">
+                <h1>Calcular la Tiempo</h1>
+                <br>
+                <input type="number" id="distacia1" placeholder="Ingrese el Distacia">
+                <br>
+                <br>
+                <input type="number" id="tiempo1" placeholder="Ingrese el Tiempo">
+                <br>
+                <br>
+                <button type="button"  onclick="captura1();">Calcular</button>
+                <h1 id="resul1" >Calculando...</h1>
+
+            </form> 
+        </div>
+
+        <div class="form1">
+            <form action="" class="form2">
+                <h1>Calcular la velocidad</h1>
+                <br>
+                <input type="number" id="tiempo2" placeholder="Ingrese el Distancias">
+                <br>
+                <br>
+                <input type="number" id="distacia2" placeholder="Ingrese el Tiempo">
+                <br>
+                <br>
+                <button type="button"  onclick="captura22();">Calcular</button>
+                <h1 id="rst" >Calculando..</h1>
+
+            </form> 
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- mruv -->
+
+    <div class="titulo">
+        <h1>Movimiento Rectilíneo Uniformemente Variado (MRUV)</h1>
+        <p>En física, el movimiento rectilíneo uniformemente acelerado, también conocido como movimiento rectilíneo 
+            uniformemente variado, es aquel en el que un móvil se 
+            desplaza sobre una trayectoria recta estando sometido a una aceleración constante.
+            </p>
+    </div>
+
+
+    <div class="img-grid1">
+        <div class="img">
+        <img src="./img/mruvacelerdistancia.JPG" alt="">
+        <img src="./img/mruvacelertiempo.JPG" alt="">
+        <img src="./img/mruvaceler.JPG" alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="grid">
+        <!-- Calcular Velocidad -->
+        <div class="form1">
+            
+            <form action="" class="form2">
+                <h1>Calcular la Distacia</h1>
+                <br>
+                <input type="number" id="vlefinal" placeholder="Ingrese el Velosidad fina">
+                <br>
+                <br>
+                <input type="number" id="velinicial" placeholder="Ingrese el Veslosidad Inicial">
+                <br>
+                <br>
+                <input type="number" id="ttiempo" placeholder="Ingrese el  Tiempo">
+                <br>
+                <br>
+                <button type="button"  onclick="capturamruv();">Calcular</button>
+                <h1 id="resultmruvd" >Calculando..</h1>
+
+            </form> 
+        </div>
+        <!-- Calcular Tiempo -->
+
+        <div class="form1">
+            
+            <form action="" class="form2">
+                <h1>Calcular la Tiempo</h1>
+                <br>
+                <input type="number" id="vlefinalT" placeholder="Ingrese el Velosidad fina">
+                <br>
+                <br>
+                <input type="number" id="velinicialT" placeholder="Ingrese el Veslosidad Inicial">
+                <br>
+                <br>
+                <input type="number" id="aceleracion" placeholder="Ingrese el  Aceleracion">
+                <br>
+                <br>
+                <button type="button"  onclick="capturaTiempo();">Calcular</button>
+                <h1 id="resultmruvT" >Calculando..</h1>
+
+            </form> 
+        </div>
+
+<!-- Callcular la aeleracion -->
+        <div class="form1">
+            
+            <form action="" class="form2">
+                <h1>Calcular la Arceleracion</h1>
+                <input type="number" id="vlefinalT3" placeholder="Ingrese el Velosidad fina">
+                <br>
+                <br>
+                <input type="number" id="velinicialT3" placeholder="Ingrese el Veslosidad Inicial">
+                <br>
+                <br>
+                <input type="number" id="aceleracino3" placeholder="Ingrese el  Aceleracion">
+                <br>
+                <br>
+                <button type="button"  onclick="cptaceleracion();">Calcular</button>
+                <h1 id="resultmruvT3" >Calculando..</h1>
+
+            </form> 
+        </div>
+
+    </div>
+
+
+
+    
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mruv.js"></script>
+
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="contact-us">
+                <h2 class="brand">ADEV Juan Adolfo Damian Damian 2290-19-19195</h2>
+                <p >«La tecnología hace posible lo que antes era imposible. El diseño hace que sea real.» — Michael Gagliano</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100077994023450" class="social-media-icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=k_-iOrI-etg" class="social-media-icon">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
